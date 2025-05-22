@@ -1,0 +1,11 @@
+Lib/
+chroma_db/
+**/useme
+uploads/
+model/
+Scripts/
+share/
+temp/
+Include/
+__pycache__/
+dont_need_actually/

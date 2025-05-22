@@ -1,0 +1,17 @@
+flask
+sqlalchemy
+requests
+werkzeug
+pyttsx3
+openai-whisper
+python-dotenv
+google-generativeai
+Pillow
+chromadb
+nltk
+numpy
+sentence-transformers
+psycopg2-binary
+sounddevice
+TTS
+vosk

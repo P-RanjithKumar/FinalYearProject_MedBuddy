@@ -1,0 +1,238 @@
+/* Dark Mode Styles */
+:root {
+    /* Light mode colors (from existing index.html) */
+    --primary: #1B5E3A;
+    --secondary: #2E7D5C;
+    --accent: #4B9B6E;
+    --light: #A8D5BA;
+    --alert: #6BBF8A;
+    --background: #f5f5f5;
+    --text-primary: #333;
+    --text-secondary: #555;
+    --card-bg: white;
+    --header-bg: white;
+    --sidebar-bg: white;
+    --border-color: #ddd;
+}
+
+body.dark-mode {
+    --primary: #81c784; /* Lighter green */
+    --secondary: #66bb6a; /* Lighter green */
+    --accent: #a5d6a7; /* Lighter green */
+    --light: #4caf50; /* Green */
+    --alert: #81c784; /* Lighter green */
+    --background: #121212; /* Dark gray */
+    --text-primary: #eee; /* Light gray */
+    --text-secondary: #ccc; /* Light gray */
+    --card-bg: #1e1e1e; /* Dark gray */
+    --header-bg: #272727;
+    --sidebar-bg: #1e1e1e;
+    --border-color: #444;
+}
+
+body.dark-mode {
+    background-color: var(--background);
+    color: var(--text-primary);
+}
+
+body.dark-mode .header {
+    background: var(--header-bg);
+    box-shadow: 0 2px 5px rgba(255,255,255,0.1); /* Lighter shadow */
+}
+
+body.dark-mode .logo {
+    color: var(--primary);
+}
+
+body.dark-mode .profile-dropdown {
+    background: var(--card-bg);
+    box-shadow: 0 2px 5px rgba(255,255,255,0.2); /* Lighter shadow */
+}
+
+body.dark-mode .profile-dropdown a {
+    color: var(--text-primary);
+}
+
+body.dark-mode .profile-dropdown a:hover {
+    background: var(--secondary);
+}
+
+body.dark-mode .notification-badge {
+    background: var(--alert); /* Keep alert color */
+}
+
+body.dark-mode .sidebar {
+    background: var(--sidebar-bg);
+}
+
+body.dark-mode .nav-item {
+    color: var(--text-secondary);
+}
+
+body.dark-mode .nav-item:hover {
+    background-color: var(--secondary);
+    color: var(--text-primary);
+}
+
+body.dark-mode .nav-item.active {
+    background-color: var(--primary); /* Keep active color */
+    color: white;
+}
+
+body.dark-mode .main-content {
+    background: var(--background);
+}
+
+body.dark-mode .card {
+    background: var(--card-bg);
+    box-shadow: 0 2px 5px rgba(255,255,255,0.1); /* Lighter shadow */
+}
+
+body.dark-mode .card h3 {
+    color: var(--text-primary);
+}
+
+body.dark-mode .btn-primary {
+    background: var(--accent); /* Keep button colors */
+}
+
+body.dark-mode .btn-secondary {
+    background: var(--light);
+    color: white;
+}
+
+body.dark-mode .chatbot-icon {
+    background: radial-gradient(circle at 70% 30%, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 20%),
+                linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+body.dark-mode .chat-window {
+    background: var(--card-bg);
+    box-shadow: 0 4px 6px rgba(255,255,255,0.2); /* Lighter shadow */
+}
+
+body.dark-mode h2 {
+    color: var(--text-primary);
+}
+
+body.dark-mode .appointment-table th,
+body.dark-mode .prescription-table th,
+body.dark-mode .results-table th {
+    background-color: var(--secondary);
+    color: white;
+}
+
+body.dark-mode .appointment-table td,
+body.dark-mode .prescription-table td,
+body.dark-mode .results-table td {
+    border-bottom: 1px solid var(--border-color);
+}
+
+body.dark-mode .form-group input {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+body.dark-mode .chat-item {
+    border-color: var(--border-color);
+}
+
+body.dark-mode .chat-title {
+    color: var(--text-primary);
+}
+
+body.dark-mode .chat-list {
+  background-color: var(--card-bg);
+}
+
+body.dark-mode .chat-item {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .chat-date {
+    color: var(--text-secondary);
+}
+
+body.dark-mode .upload-overlay-content{
+    background: var(--card-bg);
+}
+
+body.dark-mode .close-overlay {
+    background-color: var(--accent);
+}
+
+body.dark-mode .close-overlay:hover{
+    background-color: var(--light);
+}
+
+body.dark-mode .file-input-container{
+    background: var(--accent);
+}
+
+body.dark-mode .file-input-container:hover{
+    background: rgba(165, 214, 167, 0.6);
+}
+
+body.dark-mode .file-input-icon, body.dark-mode .file-input-text, body.dark-mode .file-input-hint{
+    color: var(--text-primary);
+}
+
+body.dark-mode .document-item{
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+body.dark-mode .document-name{
+    color: var(--text-primary);
+}
+
+body.dark-mode .document-meta{
+    color: var(--text-secondary)
+}
+
+body.dark-mode .view-document-btn{
+    background-color: rgba(0, 222, 155, 0.5);
+}
+
+body.dark-mode .delete-document-btn{
+    background-color: #ff0019;
+}
+
+/* Document button styles */
+.view-document-btn {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.view-document-btn:hover {
+    background-color: var(--primary);
+}
+
+.delete-document-btn {
+    background-color: #e74c3c; /* Red color */
+    color: white;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.delete-document-btn:hover {
+    background-color: #c0392b; /* Darker red */
+}
